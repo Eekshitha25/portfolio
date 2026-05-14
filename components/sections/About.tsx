@@ -11,7 +11,7 @@ const skills = [
 ]
 
 const stats = [
-  { value: '8.6', label: 'CGPA (B.Tech ECE)' },
+  { value: '3.4', label: 'CGPA (Masters in ComputerScience)' },
   { value: '2+', label: 'Years of practice' },
   { value: '5+', label: 'Projects shipped' },
 ]
