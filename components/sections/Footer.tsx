@@ -13,7 +13,7 @@ export default function Footer() {
           <span className="text-tertiary">·</span>
           <span>Eekshitha Gujjala</span>
           <span className="text-tertiary">·</span>
-          <span>Frontend Developer</span>
+          <span>Frontend Engineer</span>
         </div>
 
         <div className="text-xs font-mono text-tertiary">

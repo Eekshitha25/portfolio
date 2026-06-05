@@ -3,26 +3,26 @@ import './globals.css'
 import { ThemeProvider } from '@/components/ui/ThemeProvider'
 
 export const metadata: Metadata = {
-  title: 'Eekshitha Gujjala — Frontend Developer & UI Engineer',
+  title: 'Eekshitha Gujjala — Frontend Engineer | React · TypeScript · AEM',
   description:
-    'Frontend Developer and UI Engineer specializing in React, Next.js, and intuitive web experiences. Available for junior frontend and UI engineering roles across the United States.',
+    'Frontend Engineer with 3+ years enterprise experience at Accenture & ETS. Specializing in React, TypeScript, Next.js, and AEM. Reduced page load by 35%, improved user engagement by 25%. Open to full-time roles across the United States.',
   keywords: [
-    'Frontend Developer', 'React Developer', 'UI Engineer', 'UX Engineer',
-    'Next.js Developer', 'TypeScript', 'Tailwind CSS', 'Eekshitha Gujjala',
-    'Frontend Engineer', 'Web Developer',
+    'Frontend Engineer', 'React Developer', 'UI Engineer', 'TypeScript Engineer',
+    'Next.js Developer', 'AEM Developer', 'Adobe Experience Manager', 'Tailwind CSS',
+    'Eekshitha Gujjala', 'Frontend Architect', 'WCAG Accessibility', 'Enterprise UI',
   ],
   authors: [{ name: 'Eekshitha Gujjala' }],
   creator: 'Eekshitha Gujjala',
   openGraph: {
-    type: 'website', locale: 'en_US', url: 'https://eekshitha.dev',
-    title: 'Eekshitha Gujjala — Frontend Developer & UI Engineer',
-    description: 'Frontend Developer crafting intuitive, high-performance web experiences with React, Next.js & modern design systems.',
+    type: 'website', locale: 'en_US', url: 'https://eekshitha-portfolio.vercel.app',
+    title: 'Eekshitha Gujjala — Frontend Engineer | React · TypeScript · AEM',
+    description: 'Frontend Engineer with 3+ years at Accenture & ETS. React, TypeScript, AEM specialist. Open to full-time roles.',
     siteName: 'Eekshitha Gujjala Portfolio',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Eekshitha Gujjala — Frontend Developer & UI Engineer',
-    description: 'Frontend Developer crafting intuitive, high-performance web experiences.',
+    title: 'Eekshitha Gujjala — Frontend Engineer | React · TypeScript · AEM',
+    description: 'Frontend Engineer with 3+ years enterprise experience. React, TypeScript, AEM. Open to full-time roles.',
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
 }

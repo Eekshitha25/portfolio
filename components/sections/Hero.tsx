@@ -13,6 +13,13 @@ const item = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.75, ease: [0.21, 0.47, 0.32, 0.98] } },
 }
 
+const metrics = [
+  { value: '35%', label: 'Page load reduction' },
+  { value: '40%', label: 'UI inconsistency eliminated' },
+  { value: '25%', label: 'User engagement increase' },
+  { value: '3+', label: 'Years enterprise experience' },
+]
+
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden px-6 pt-16">
@@ -26,7 +33,6 @@ export default function Hero() {
           className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] rounded-full blur-[100px] opacity-[0.05]"
           style={{ background: 'radial-gradient(circle, var(--accent-warm) 0%, transparent 70%)' }}
         />
-        {/* Grid lines */}
         <div
           className="absolute inset-0 opacity-[0.025]"
           style={{
@@ -47,7 +53,7 @@ export default function Hero() {
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75" style={{ background: 'var(--accent)' }} />
           <span className="relative inline-flex rounded-full h-2 w-2" style={{ background: 'var(--accent)' }} />
         </span>
-        Open to Frontend Developer &amp; UI Engineer roles
+        Open to Frontend Engineer & UI Engineer roles — Available immediately
         <Sparkles size={12} style={{ color: 'var(--accent-warm)' }} />
       </motion.div>
 
@@ -67,28 +73,52 @@ export default function Hero() {
           className="font-display text-5xl md:text-7xl lg:text-8xl leading-[0.95] tracking-tight text-primary mb-6"
         >
           Frontend
-          <span className="block" style={{ color: 'var(--accent)' }}>Developer</span>
+          <span className="block" style={{ color: 'var(--accent)' }}>Engineer</span>
           <span className="block text-4xl md:text-5xl lg:text-6xl font-body font-light text-secondary mt-2">
-            &amp; UI Engineer
+            React · TypeScript · AEM
           </span>
         </motion.h1>
 
         <motion.p
           variants={item}
-          className="text-base md:text-lg text-secondary leading-relaxed max-w-xl mx-auto mb-10"
+          className="text-base md:text-lg text-secondary leading-relaxed max-w-xl mx-auto mb-8"
         >
-          Crafting intuitive, high-performance web experiences with React, Next.js, and modern design systems.
-          Turning complex problems into elegant, accessible interfaces.
+          3+ years building enterprise-scale applications at Accenture & ETS.
+          I ship fast, accessible, high-performance interfaces that move the needle.
         </motion.p>
+
+        {/* Impact metrics */}
+        <motion.div
+          variants={item}
+          className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-2xl mx-auto mb-10"
+        >
+          {metrics.map((m) => (
+            <div
+              key={m.label}
+              className="p-3 rounded-xl border bg-card/60 backdrop-blur-sm"
+              style={{ borderColor: 'var(--border-subtle)' }}
+            >
+              <div className="font-display text-2xl md:text-3xl text-primary mb-0.5" style={{ color: 'var(--accent)' }}>{m.value}</div>
+              <div className="text-xs text-tertiary font-mono leading-tight">{m.label}</div>
+            </div>
+          ))}
+        </motion.div>
 
         <motion.div variants={item} className="flex flex-col sm:flex-row items-center justify-center gap-3">
           <a
-            href="#projects"
+            href="#experience"
             className="group inline-flex items-center gap-2 px-6 py-3 rounded-full font-medium text-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
             style={{ background: 'var(--accent)', color: '#fff' }}
           >
-            View Projects
+            View Experience
             <span className="group-hover:translate-x-0.5 transition-transform">→</span>
+          </a>
+          <a
+            href="#projects"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-medium text-sm border transition-all duration-300 hover:bg-secondary hover:-translate-y-0.5 text-primary"
+            style={{ borderColor: 'var(--border)' }}
+          >
+            View Projects
           </a>
           <a
             href="#contact"
@@ -102,9 +132,9 @@ export default function Hero() {
         {/* Tech stack pills */}
         <motion.div
           variants={item}
-          className="mt-12 flex flex-wrap justify-center gap-2"
+          className="mt-10 flex flex-wrap justify-center gap-2"
         >
-          {['React.js', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Figma', 'Adobe XD'].map((tech) => (
+          {['React.js', 'Next.js', 'TypeScript', 'AEM', 'Tailwind CSS', 'Redux', 'Figma', 'WCAG'].map((tech) => (
             <span
               key={tech}
               className="px-3 py-1 rounded-full text-xs font-mono border text-tertiary hover:text-secondary hover:border-current transition-colors cursor-default"
@@ -131,18 +161,6 @@ export default function Hero() {
           <ArrowDown size={14} />
         </motion.div>
       </motion.div>
-
-      {/* Corner decorations */}
-      <div className="absolute top-24 right-8 md:right-16 opacity-20 rotate-12 font-mono text-xs text-tertiary leading-relaxed hidden lg:block">
-        <div>React Developer</div>
-        <div>UI Engineer</div>
-        <div>UX Thinker</div>
-      </div>
-      <div className="absolute bottom-24 left-8 md:left-16 opacity-20 -rotate-6 font-mono text-xs text-tertiary leading-relaxed hidden lg:block">
-        <div>TypeScript</div>
-        <div>Framer Motion</div>
-        <div>Tailwind CSS</div>
-      </div>
     </section>
   )
 }
